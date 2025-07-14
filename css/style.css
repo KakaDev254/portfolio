@@ -1,0 +1,268 @@
+/* =============================
+   🌗 Theme Variables
+============================= */
+:root {
+  --bg-color: #1f1f1f;
+  --text-color: #eeeeee;
+  --accent-color: #00adb5;
+  --btn-color: #f8b400;
+  --card-bg: #393e46;
+}
+
+.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #1f1f1f;
+  --accent-color: #007bff;
+  --btn-color: #ff9800;
+  --card-bg: #f5f5f5;
+}
+
+/* =============================
+   🌐 Global Styles
+============================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* =============================
+   🌐 Navbar
+============================= */
+.navbar {
+  background-color: #121212;
+  transition: background-color 0.4s ease;
+}
+
+.navbar-brand {
+  color: var(--btn-color) !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  margin-left: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.light-theme .navbar {
+  background-color: #f8f9fa !important;
+}
+
+.light-theme .nav-link {
+  color: var(--text-color) !important;
+}
+
+.light-theme .navbar-brand {
+  color: var(--accent-color) !important;
+}
+
+/* 🔵 Navbar Hamburger Color (Light Mode) */
+.light-theme .navbar-toggler {
+  border-color: transparent;
+}
+
+.light-theme .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23007BFF' viewBox='0 0 30 30'%3e%3cpath stroke='%23007BFF' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =============================
+   🎯 Hero Section
+============================= */
+.hero {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: var(--accent-color);
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  border: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* =============================
+   🌙 Theme Toggle Icon
+============================= */
+.theme-toggle {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-color) !important;
+}
+
+/* =============================
+   🧑‍💻 About Section
+============================= */
+.badge {
+  font-size: 0.9rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+/* =============================
+   📁 Projects Section
+============================= */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-title {
+  color: var(--accent-color);
+}
+
+.card-body {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+}
+
+.card-body .card-text {
+  color: var(--text-color);
+}
+
+.light-theme .card-body .card-text {
+  color: #333333;
+}
+
+.btn-primary {
+  background-color: var(--btn-color);
+  border: none;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* =============================
+   ✉️ Contact Section
+============================= */
+form label {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+form .form-control {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid #555;
+}
+
+form .form-control::placeholder {
+  color: #aaa;
+}
+
+form .btn-primary {
+  background-color: var(--btn-color);
+  color: var(--bg-color);
+  font-weight: 600;
+  border: none;
+}
+
+form .btn-primary:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+ul li i {
+  color: var(--accent-color);
+}
+
+ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* =============================
+   🟢 Floating WhatsApp Button
+============================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 56px;
+  max-height: 56px;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebc59;
+  transform: scale(1.05);
+}
+
+.light-theme .whatsapp-float {
+  color: white;
+}
