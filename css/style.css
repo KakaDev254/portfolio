@@ -134,8 +134,8 @@ section {
   font-size: 2.3rem;
   line-height: 1.2;
   font-weight: 700;
-  margin-bottom: 0.8rem;
-  margin-top: 0.5rem;
+  margin-bottom: 0 !important;
+  margin-top: 1.5rem;
 }
 .highlight {
   color: var(--accent-color);
@@ -148,7 +148,7 @@ section {
 .hero-overlay-content {
   margin-top: 0;
   text-align: left;
-  padding: 0.25rem 0.25rem;
+  padding: 0.1rem 0.25rem;
 }
 
 .hero-overlay-content small,
@@ -188,7 +188,10 @@ section {
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
-
+.custom-social-spacing {
+  margin-top: 0; /* or 0.2rem for even tighter gap */
+  margin-bottom: 0.5rem;
+}
 .social-icons a {
   font-size: 1.2rem;
   color: var(--primary-color);
