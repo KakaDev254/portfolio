@@ -111,7 +111,7 @@ section {
 /* Developer Image */
 .hero-img {
   width: 100%;
-  height: auto;
+  height: fit-content;
   object-fit: cover;
 }
 
@@ -121,12 +121,16 @@ section {
   left: 0;
   right: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Optional overlay background */
+  background: rgba(0, 0, 0, 0.6);
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; /* <-- adjusted */
   z-index: 2;
+}
+
+.hero-overlay-fullscreen .hero-name-top {
+  margin-bottom: 0.4rem; /* <-- adjusted */
 }
 
 /* Developer Name on Mobile */
@@ -135,7 +139,6 @@ section {
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 0 !important;
-  margin-top: 1.5rem;
 }
 .highlight {
   color: var(--accent-color);
@@ -146,7 +149,7 @@ section {
 
 /* Overlay Content Below Name */
 .hero-overlay-content {
-  margin-top: 0;
+  margin-top: 1rem;
   text-align: left;
   padding: 0.1rem 0.25rem;
 }
@@ -161,12 +164,14 @@ section {
 
 .hero-overlay-content h2 {
   font-size: 1.2rem;
+  padding-top: 2rem;
   font-weight: 600;
 }
 
 .hero-overlay-content p {
   font-size: 0.9rem;
   margin-top: 0.5rem;
+  padding-bottom: 2.4rem;
 }
 
 /* Developer Name on Desktop */
@@ -244,6 +249,15 @@ section {
     background-color: var(--bg-color);
   }
 }
+@media (max-width: 767.98px) {
+  .hero {
+    min-height: unset;
+    padding-bottom: 2rem; /* Adds nice breathing room */
+  }
+  .social-icons {
+    padding-bottom: 2rem;
+  }
+}
 
 /* Optional: Fix top spacing if there's extra margin */
 body {
@@ -267,6 +281,8 @@ body {
 ============================= */
 .about-section {
   background-color: var(--bg-color);
+  margin-top: 0 !important;
+  padding-top: 0;
   color: var(--text-color);
 }
 
