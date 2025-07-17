@@ -90,84 +90,72 @@
     </nav>
 
     <!-- 🎯 Hero Section -->
-    <section class="hero container">
-      <div class="row align-items-center position-relative">
-        <!-- Image Column -->
-        <div
-          class="col-md-6 text-center mb-4 mb-md-0 position-relative"
-          data-aos="fade-right"
-          data-aos-duration="1200"
-        >
+    <section class="hero container position-relative">
+      <div class="row align-items-center">
+        <!-- Image & Overlay Container -->
+        <div class="col-md-6 position-relative hero-image-container">
           <img
             src="assets/images/developer.png"
             alt="Developer"
             class="img-fluid developer-img"
           />
 
-          <!-- Name Overlay -->
-          <h1
-            class="hero-name-overlay display-3 fw-bold text-start"
-            data-aos="fade-down"
-            data-aos-delay="300"
-            data-aos-duration="1000"
-          >
-            Enock<br /><span class="highlight">Miregwa.</span>
-          </h1>
+          <!-- Overlay Text (for Mobile) -->
+          <div class="hero-overlay-fullscreen d-md-none text-light">
+            <!-- Developer Name at Top -->
+            <h1 class="hero-name-top display-4 fw-bold text-start">
+              Enock<br /><span class="highlight">Miregwa</span>
+            </h1>
+
+            <!-- Content Below -->
+            <div class="hero-overlay-content text-center px-3">
+              <div class="social-icons my-3">
+                <a href="#"><i class="bx bxl-dribbble"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+              </div>
+              <small class="text-uppercase text-muted d-block mt-2"
+                >— Introduction</small
+              >
+              <h2 class="fw-semibold mt-2">
+                A Full Stack Developer building fast, modern, responsive web
+                apps.
+              </h2>
+              <p class="mt-3">
+                I specialize in building scalable full-stack web applications
+                that are sleek, high-performing, and user-friendly.
+              </p>
+              <a href="#projects" class="btn btn-story mt-3">
+                See My Work <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- Text Column -->
-        <div
-          class="col-md-6 text-center text-md-start"
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-        >
-          <div
-            class="social-icons my-3"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <a href="#" aria-label="Dribbble"
-              ><i class="bx bxl-dribbble"></i
-            ></a>
-            <a href="#" aria-label="Instagram"
-              ><i class="bx bxl-instagram"></i
-            ></a>
-            <a href="#" aria-label="LinkedIn"
-              ><i class="bx bxl-linkedin-square"></i
-            ></a>
+        <!-- Text Column for Desktop Only -->
+        <div class="col-md-6 d-none d-md-block text-md-start">
+          <div class="social-icons my-3">
+            <a href="#"><i class="bx bxl-dribbble"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
           </div>
-
-          <small
-            class="text-uppercase text-muted d-block mt-2"
-            data-aos="fade-in"
-            data-aos-delay="400"
+          <small class="text-uppercase text-muted d-block mt-2"
+            >— Introduction</small
           >
-            — Introduction
-          </small>
-
-          <h2 class="fw-semibold mt-2" data-aos="fade-up" data-aos-delay="500">
+          <h2 class="fw-semibold mt-2">
             A Full Stack Developer building fast, modern, responsive web apps.
           </h2>
-
-          <p class="mt-3" data-aos="fade-up" data-aos-delay="600">
+          <p class="mt-3">
             I specialize in building scalable full-stack web applications that
             are sleek, high-performing, and user-friendly.
           </p>
-
-          <a
-            href="#projects"
-            class="btn btn-story mt-3"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
+          <a href="#projects" class="btn btn-story mt-3">
             See My Work <i class="fas fa-arrow-right ms-2"></i>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- 🔧 Add more sections below: About, Projects, Contact -->
     <!-- 👤 About Section -->
     <section id="about" class="py-5">
       <div class="container">
