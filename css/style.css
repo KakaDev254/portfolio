@@ -263,18 +263,107 @@ body {
 }
 
 /* =============================
-   🧑‍💻 About Section
+   👤 About Section
 ============================= */
-.badge {
-  font-size: 0.9rem;
-  background-color: var(--card-bg);
+.about-section {
+  background-color: var(--bg-color);
   color: var(--text-color);
-  border-radius: 30px;
-  transition: transform 0.2s ease-in-out;
 }
 
-.badge:hover {
-  transform: scale(1.05);
+.about-highlight {
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.about-highlight:hover {
+  transform: translateY(-5px);
+}
+
+.about-highlight .icon-wrapper {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.about-highlight .stat {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.about-highlight img {
+  max-width: 120px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 50%;
+}
+
+.about-points {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-points .icon-circle {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.about-points p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.tech-stack {
+  margin-top: 1rem;
+}
+
+.badge-tech {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.badge-tech:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    gap: 0.5rem;
+  }
+
+  .badge-tech {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+/* Responsive spacing */
+@media (max-width: 767.98px) {
+  .about-section {
+    text-align: center;
+  }
+
+  .about-highlight {
+    margin: 0 auto;
+  }
+
+  .about-points {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* =============================

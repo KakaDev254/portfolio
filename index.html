@@ -157,68 +157,83 @@
     </section>
 
     <!-- 👤 About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="about-section py-5">
       <div class="container">
-        <div class="row align-items-center g-5">
-          <!-- Profile Image -->
-          <div
-            class="col-md-5 text-center"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <img
-              src="assets/images/ceo.jpg"
-              alt="Enock Miregwa"
-              class="img-fluid rounded-circle shadow"
-              style="max-width: 250px"
-            />
-          </div>
-
-          <!-- About Text & Skills -->
-          <div
-            class="col-md-7"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
+        <div class="row g-4 align-items-center">
+          <!-- Left Column: Intro -->
+          <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1000">
             <h2 class="fw-bold mb-3">About Me</h2>
             <p>
-              I'm <strong>Enock Miregwa</strong>, a passionate Full Stack
-              Developer with experience in crafting modern, scalable, and
-              performant web applications. I specialize in both
-              <strong>frontend</strong> and <strong>backend</strong> development
-              using tools like <strong>React</strong>,
-              <strong>Bootstrap</strong>, <strong>Django</strong>, and
-              <strong>Node.js</strong>.
+              I specialize in turning complex problems into elegant solutions.
+              My approach blends creativity with strategic thinking to deliver
+              full-stack solutions that not only look great but also work
+              seamlessly across platforms.
             </p>
+          </div>
 
-            <h5 class="mt-4">Tech Stack:</h5>
-            <div class="d-flex flex-wrap gap-3 mt-2">
-              <span class="badge bg-secondary p-2"
-                ><i class="bx bxl-html5"></i> HTML5</span
-              >
-              <span class="badge bg-secondary p-2"
-                ><i class="bx bxl-css3"></i> CSS3</span
-              >
-              <span class="badge bg-secondary p-2"
+          <!-- Middle Column: Highlight Card -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="about-highlight text-center p-4 rounded">
+              <div class="icon-wrapper mb-2">
+                <i class="bx bx-target-lock"></i>
+              </div>
+              <h3 class="stat mb-1">120%</h3>
+              <p class="text-muted mb-3">
+                Increase in client satisfaction in 6 months
+              </p>
+              <img
+                src="assets/images/ceo.jpg"
+                alt="Enock Miregwa"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+
+          <!-- Right Column: Details -->
+          <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="about-points mb-3">
+              <i class="bx bxs-bulb icon-circle"></i>
+              <p>
+                With 4+ years of experience, I build intuitive, scalable web
+                apps using modern full-stack technologies.
+              </p>
+            </div>
+            <div class="about-points">
+              <i class="bx bxs-rocket icon-circle"></i>
+              <p>
+                I thrive on collaboration, solving real-world problems through
+                elegant solutions that delight users.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="row mt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-12 text-center">
+            <h5 class="fw-semibold mb-3">Tech Stack & Tools</h5>
+            <div
+              class="tech-stack d-flex flex-wrap justify-content-center gap-3"
+            >
+              <span class="badge-tech"><i class="bx bxl-html5"></i> HTML5</span>
+              <span class="badge-tech"><i class="bx bxl-css3"></i> CSS3</span>
+              <span class="badge-tech"
                 ><i class="bx bxl-bootstrap"></i> Bootstrap</span
               >
-              <span class="badge bg-secondary p-2"
+              <span class="badge-tech"
                 ><i class="bx bxl-javascript"></i> JavaScript</span
               >
-              <span class="badge bg-secondary p-2"
-                ><i class="bx bxl-react"></i> React</span
-              >
-              <span class="badge bg-secondary p-2"
+              <span class="badge-tech"><i class="bx bxl-react"></i> React</span>
+              <span class="badge-tech"
                 ><i class="bx bxl-python"></i> Python</span
               >
-              <span class="badge bg-secondary p-2"
+              <span class="badge-tech"
                 ><i class="bx bxl-django"></i> Django</span
               >
-              <span class="badge bg-secondary p-2"
+              <span class="badge-tech"
                 ><i class="bx bxl-nodejs"></i> Node.js</span
               >
-              <span class="badge bg-secondary p-2"
+              <span class="badge-tech"
                 ><i class="bx bxl-mongodb"></i> MongoDB</span
               >
             </div>
@@ -226,6 +241,7 @@
         </div>
       </div>
     </section>
+
     <!-- 💼 Projects Section -->
     <section id="projects" class="py-5">
       <div class="container">
